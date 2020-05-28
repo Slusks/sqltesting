@@ -40,9 +40,35 @@ def topLanerDetails():
     return topLanerStats
 
 
+'''
+Matchups [
+{
+    id: ESPORTSBLAH BLAH
+    winner: CHAMP1
+    loser: CHAMP2
+},
+{
+    id: otherESPORTSBLAH BLAH
+    winner: CHAMP1
+    loser: CHAMP2
+}
+]
+'''
 
+matchups = []
 topLaneChampionTupleList = c.execute('SELECT gameid, champion, wins FROM LCS_2020SpringMatchData where position="top" ORDER BY gameid DESC').fetchall()
 for i in topLaneChampionTupleList:
-    print (i)
+    id = i[0]
+    champ = i[1]
+    result = i[2]
+    if result = '1':
+        for matchup in matchups
+            if matchup['id'] = id:
+                matchup['winner'] = champ:
+            else if 
+
+
+
+
         
 
